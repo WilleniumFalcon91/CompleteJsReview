@@ -32,6 +32,20 @@
 
 
 //Lecture on Operators
-var now = 2017
-var birthYear = now - 26;
-console.log(birthYear);
+// var now = 2017
+// var birthYear = now - 26;
+// console.log(birthYear);
+
+
+
+//Lecture: if/else statements 
+var name = 'John';
+var age = 26;
+var isMarried = 'no';
+
+if(isMarried === 'yes') {
+    console.log(name + ' is married!');
+} else {
+    console.log(name + ' is single and ready to mingle!');
+}
+
