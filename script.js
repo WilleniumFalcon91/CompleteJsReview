@@ -78,3 +78,20 @@
 //     default:
 //         console.log("John does something else");
 // }
+
+//First coding challenge
+var height1 = 66;
+var height2 = 72; 
+
+var age1 = 20;
+var age2 = 17;
+
+function game () {
+    if ((age1 * 5 + height1) > (age2 * 5 + height2)) {
+        console.log('Player1 wins!');
+    } else {
+        console.log("Player2 wins!");
+    }
+}
+
+game();
