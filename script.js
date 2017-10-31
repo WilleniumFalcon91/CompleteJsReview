@@ -1,4 +1,4 @@
-//Lecture: variables
+// Lecture: variables
 // var name = 'John';
 // console.log(name);
 
@@ -13,7 +13,7 @@
 
 
 
-//Lecture: variables 2
+// Lecture: variables 2
 // var name = 'John';
 // var age = 26;
 
@@ -31,14 +31,14 @@
 
 
 
-//Lecture: Operators
+// Lecture: Operators
 // var now = 2017
 // var birthYear = now - 26;
 // console.log(birthYear);
 
 
 
-//Lecture: if/else statements 
+// Lecture: if/else statements 
 // var name = 'John';
 // var age = 26;
 // var isMarried = 'no';
@@ -50,7 +50,7 @@
 // }
 
 
-//Lecture: boolean logic and switch
+// Lecture: boolean logic and switch
 // var age = 20;
 
 // if (age <= 19) {
@@ -79,7 +79,7 @@
 //         console.log("John does something else");
 // }
 
-//First coding challenge
+// First coding challenge
 // var height1 = 66;
 // var height2 = 72; 
 
@@ -96,24 +96,24 @@
 
 // game();
 
-function calculateAge(yearOfBirth) {
-    var age = 2017 - yearOfBirth;
-    return age;
-}
+// function calculateAge(yearOfBirth) {
+//     var age = 2017 - yearOfBirth;
+//     return age;
+// }
 
-var myAge = calculateAge(1991);
+// var myAge = calculateAge(1991);
 
 
-function yearUntilRetirement(name, year) {
-    var age = calculateAge(year);
-    var retirement = 65 - age;
+// function yearUntilRetirement(name, year) {
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
 
-    if (retirement >= 0) {
-        console.log(name + ' can retire in ' + retirement + ' years.');
-    } else {
-        console.log(name + ' is already retired.')
-    }
+//     if (retirement >= 0) {
+//         console.log(name + ' can retire in ' + retirement + ' years.');
+//     } else {
+//         console.log(name + ' is already retired.')
+//     }
     
-}
+// }
 
-yearUntilRetirement('Will', 1991);
+// yearUntilRetirement('Will', 1991);
