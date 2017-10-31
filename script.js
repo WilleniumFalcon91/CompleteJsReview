@@ -80,18 +80,40 @@
 // }
 
 //First coding challenge
-var height1 = 66;
-var height2 = 72; 
+// var height1 = 66;
+// var height2 = 72; 
 
-var age1 = 20;
-var age2 = 17;
+// var age1 = 18;
+// var age2 = 17;
 
-function game () {
-    if ((age1 * 5 + height1) > (age2 * 5 + height2)) {
-        console.log('Player1 wins!');
-    } else {
-        console.log("Player2 wins!");
-    }
+// function game () {
+//     if ((age1 * 5 + height1) > (age2 * 5 + height2)) {
+//         console.log('Player1 wins!');
+//     } else {
+//         console.log("Player2 wins!");
+//     }
+// }
+
+// game();
+
+function calculateAge(yearOfBirth) {
+    var age = 2017 - yearOfBirth;
+    return age;
 }
 
-game();
+var myAge = calculateAge(1991);
+
+
+function yearUntilRetirement(name, year) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if (retirement >= 0) {
+        console.log(name + ' can retire in ' + retirement + ' years.');
+    } else {
+        console.log(name + ' is already retired.')
+    }
+    
+}
+
+yearUntilRetirement('Will', 1991);
