@@ -143,19 +143,19 @@
 // }
 
 //Lecture: Objects
-var john = {
-    name: 'John',
-    lastName: 'Smith',
-    yearOfBirth: 1990,
-    job: 'teacher',
-    isMarried: false,
-    family: ['Jane', 'Mark', 'Bob'],
-    calculateAge: function() {
-        this.age = 2017 - this.yearOfBirth;
-    }
-};
+// var john = {
+//     name: 'John',
+//     lastName: 'Smith',
+//     yearOfBirth: 1990,
+//     job: 'teacher',
+//     isMarried: false,
+//     family: ['Jane', 'Mark', 'Bob'],
+//     calculateAge: function() {
+//         this.age = 2017 - this.yearOfBirth;
+//     }
+// };
 
-john.calculateAge();
+// john.calculateAge();
 
 // console.log(john.job);
 // console.log(john['name']);
@@ -171,5 +171,33 @@ john.calculateAge();
 // var age = john.calculateAge();
 // john.age = age;
 
-console.log(john);
+// console.log(john);
 
+//Lecture: Loops
+// for (var i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+
+var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+
+// for (var i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+// }
+
+// for (var i = names.length - 1; i >= 0; i--) {
+//     console.log(names[i]);
+// }
+
+// var i = 0;
+// while (i < names.length ) {
+//     console.log(names[i]);
+//     i++;
+// }
+
+for (var i = 1; i <= 5; i++) {
+
+    if (i === 3) {
+        continue;
+    }
+    console.log(i);
+}
