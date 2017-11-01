@@ -178,7 +178,7 @@
 //     console.log(i);
 // }
 
-var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+// var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
 
 // for (var i = 0; i < names.length; i++) {
 //     console.log(names[i]);
@@ -194,10 +194,45 @@ var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
 //     i++;
 // }
 
-for (var i = 1; i <= 5; i++) {
+// for (var i = 1; i <= 5; i++) {
 
-    if (i === 3) {
-        continue;
+//     if (i === 3) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+//Coding Challenge
+
+var years = [1990, 1991, 1995, 1999, 2010];
+
+
+function printFullAge () {
+    var result = [];
+    for (var i = 0; i <= years.length - 1; i++) {
+        result.push(years[i]);
+        var age = 2017 - result[i];
+        var ofAge = age >= 18;
+        console.log(age, ofAge);
     }
-    console.log(i);
+ 
 }
+
+printFullAge();
+
+function revisedAge (yob, status) {
+    var age = 2017 - yob;
+    if (age >= 18) {
+        console.log(age, true);
+    } else {
+        console.log(age, false);
+    }
+}
+
+revisedAge(1991, true);
+
+
+
+
+
+
