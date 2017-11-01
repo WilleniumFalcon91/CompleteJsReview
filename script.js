@@ -148,17 +148,28 @@ var john = {
     lastName: 'Smith',
     yearOfBirth: 1990,
     job: 'teacher',
-    isMarried: false
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        this.age = 2017 - this.yearOfBirth;
+    }
 };
 
-console.log(john.job);
-console.log(john['name']);
+john.calculateAge();
 
-var jane = new Object();
+// console.log(john.job);
+// console.log(john['name']);
 
-jane.name = 'Jane';
-jane.lastName = 'Smith'
-jane['yearOfBirth'] = 1969;
+// var jane = new Object();
 
-console.log(jane);
+// jane.name = 'Jane';
+// jane.lastName = 'Smith'
+// jane['yearOfBirth'] = 1969;
+
+
+
+// var age = john.calculateAge();
+// john.age = age;
+
+console.log(john);
 
