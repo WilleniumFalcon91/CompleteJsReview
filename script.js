@@ -120,24 +120,45 @@
 
 //Lecture: Arrays
 
-var names = ['John', 'Jane', 'Mark'];
-var years = new Array(1990, 1969, 1948);
+// var names = ['John', 'Jane', 'Mark'];
+// var years = new Array(1990, 1969, 1948);
 
-console.log(names[0]);
-names[1] = 'Ben';
-console.log(names);
+// console.log(names[0]);
+// names[1] = 'Ben';
+// console.log(names);
 
-var john = ['John', 'Smith', 1990, 'teacher', false];
+// var john = ['John', 'Smith', 1990, 'teacher', false];
 
-john.push('blue');
-john.unshift('Mr.');
-john.pop();
-john.shift();
+// john.push('blue');
+// john.unshift('Mr.');
+// john.pop();
+// john.shift();
 
-console.log(john);
+// console.log(john);
 
-var lastname = john.indexOf('Smith');
+// var lastname = john.indexOf('Smith');
 
-if (john.indexOf('doctor') === -1) {
-    console.log('John is not a doctor');
-}
+// if (john.indexOf('doctor') === -1) {
+//     console.log('John is not a doctor');
+// }
+
+//Lecture: Objects
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.job);
+console.log(john['name']);
+
+var jane = new Object();
+
+jane.name = 'Jane';
+jane.lastName = 'Smith'
+jane['yearOfBirth'] = 1969;
+
+console.log(jane);
+
