@@ -282,39 +282,59 @@
 // }
 
 
-
-
 // Example to show the differece between execution stack and scope chain
 
 
-var a = 'Hello!';
-first();
+// var a = 'Hello!';
+// first();
 
-function first() {
-    var b = 'Hi!';
-    second();
+// function first() {
+//     var b = 'Hi!';
+//     second();
 
-    function second() {
-        var c = 'Hey!';
-        third();
+//     function second() {
+//         var c = 'Hey!';
+//         third();
 
-        function third() {
-            var d = 'John';
-            console.log(a + b + c + d);
-        }
-    }
-}
-
-
-
-
-
+//         function third() {
+//             var d = 'John';
+//             console.log(a + b + c + d);
+//         }
+//     }
+// }
 
 ///////////////////////////////////////
 // Lecture: The this keyword
 
+// calculateAge(1967);
+
+// function calculateAge(year){
+//     console.log(2017 - year);
+//     console.log(this);
+// }
 
 
+var john = {
+    name: 'John',
+    yearOfBirth: 1991,
+    calculateAge: function() {
+        console.log(2017 - this.yearOfBirth);
 
+        // function innerFunction() {
+        //     console.log(this);
+        // }
+        // innerFunction();
+    }
+}
 
+// john.calculateAge();
 
+var mike = {
+    name: 'Mike',
+    yearOfBirth: 1984,
+
+}
+
+mike.calculateAge = john.calculateAge;
+
+mike.calculateAge();
