@@ -204,32 +204,123 @@
 
 //Coding Challenge
 
-var years = [1990, 1991, 1995, 1999, 2010];
+// var years = [1990, 1991, 1995, 1999, 2010];
 
 
-function printFullAge () {
-    var result = [];
-    for (var i = 0; i <= years.length - 1; i++) {
-        result.push(years[i]);
-        var age = 2017 - result[i];
-        var ofAge = age >= 18;
-        console.log(age, ofAge);
-    }
+// function printFullAge () {
+//     var result = [];
+//     for (var i = 0; i <= years.length - 1; i++) {
+//         result.push(years[i]);
+//         var age = 2017 - result[i];
+//         var ofAge = age >= 18;
+//         console.log(age, ofAge);
+//     }
  
+// }
+
+// printFullAge();
+
+// function revisedAge (yob, status) {
+//     var age = 2017 - yob;
+//     if (age >= 18) {
+//         console.log(age, true);
+//     } else {
+//         console.log(age, false);
+//     }
+// }
+
+// revisedAge(1991, true);
+
+///////////////////////////////////////
+// Lecture: Hoisting
+
+//function declaration hoisting
+calculateAge(1990); 
+
+function calculateAge(year) {
+    console.log(2017 - year);
 }
 
-printFullAge();
+//function expression hoisting 
+var retirement = function(year) {
+    console.log(65 - (2017 - year));
+}
 
-function revisedAge (yob, status) {
-    var age = 2017 - yob;
-    if (age >= 18) {
-        console.log(age, true);
-    } else {
-        console.log(age, false);
+retirement(1991);
+
+//variable hoisting and scope
+var age = 25;
+console.log(age);
+
+function foo() {
+    var age = 65;
+    console.log(age);
+}
+
+foo();
+console.log(age);
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////
+// Lecture: Scoping
+
+
+// First scoping example
+
+/*
+var a = 'Hello!';
+first();
+
+function first() {
+    var b = 'Hi!';
+    second();
+
+    function second() {
+        var c = 'Hey!';
+        console.log(a + b + c);
+    }
+}
+*/
+
+
+
+// Example to show the differece between execution stack and scope chain
+
+/*
+var a = 'Hello!';
+first();
+
+function first() {
+    var b = 'Hi!';
+    second();
+
+    function second() {
+        var c = 'Hey!';
+        third()
     }
 }
 
-revisedAge(1991, true);
+function third() {
+    var d = 'John';
+    console.log(a + b + c + d);
+}
+*/
+
+
+
+///////////////////////////////////////
+// Lecture: The this keyword
 
 
 
